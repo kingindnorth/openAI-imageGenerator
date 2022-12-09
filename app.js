@@ -8,6 +8,7 @@ const app = express()
 
 //bodyparser
 app.use(express.json())
+app.use(express.urlencoded({extended:false}))
 
 //routes
 app.use("/api",aiRoute)
